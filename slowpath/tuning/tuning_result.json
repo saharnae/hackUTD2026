@@ -1,0 +1,138 @@
+{
+  "confirm_seeds": "60-79",
+  "confirmed_top_k": [
+    {
+      "confirm": -2.413658482142857,
+      "params": {
+        "edge_threshold_ticks": 2.8931854523005502,
+        "exit_edge_ticks": 1.1236378964908398,
+        "hedge_band_shares": 664,
+        "max_orders_per_event": 2,
+        "min_move_cents": 4,
+        "size_cap_base": 5,
+        "size_cap_max": 8,
+        "time_stop_us": 6833
+      },
+      "search": 23.867292782142858,
+      "trial": 10
+    },
+    {
+      "confirm": -7.512444182142858,
+      "params": {
+        "edge_threshold_ticks": 2.8177838812146745,
+        "exit_edge_ticks": 0.9169189744985476,
+        "hedge_band_shares": 927,
+        "max_orders_per_event": 4,
+        "min_move_cents": 4,
+        "size_cap_base": 4,
+        "size_cap_max": 6,
+        "time_stop_us": 6946
+      },
+      "search": 28.014925223809524,
+      "trial": 17
+    },
+    {
+      "confirm": -12.896874999999998,
+      "params": {
+        "edge_threshold_ticks": 2.430378732744839,
+        "exit_edge_ticks": 1.3647162509775996,
+        "hedge_band_shares": 971,
+        "max_orders_per_event": 3,
+        "min_move_cents": 4,
+        "size_cap_base": 5,
+        "size_cap_max": 8,
+        "time_stop_us": 3708
+      },
+      "search": 21.365504091666665,
+      "trial": 1
+    },
+    {
+      "confirm": -20.141741071428573,
+      "params": {
+        "edge_threshold_ticks": 2.091850650057069,
+        "exit_edge_ticks": 1.1683087711439297,
+        "hedge_band_shares": 951,
+        "max_orders_per_event": 4,
+        "min_move_cents": 4,
+        "size_cap_base": 5,
+        "size_cap_max": 8,
+        "time_stop_us": 8932
+      },
+      "search": 31.308978980952386,
+      "trial": 19
+    },
+    {
+      "confirm": -23.87944642857143,
+      "params": {
+        "edge_threshold_ticks": 2.602218859786371,
+        "exit_edge_ticks": 1.1531700708996737,
+        "hedge_band_shares": 729,
+        "max_orders_per_event": 4,
+        "min_move_cents": 3,
+        "size_cap_base": 5,
+        "size_cap_max": 8,
+        "time_stop_us": 3628
+      },
+      "search": 25.19423009523809,
+      "trial": 13
+    }
+  ],
+  "default_trial0": {
+    "params": {
+      "edge_threshold_ticks": 1.5,
+      "exit_edge_ticks": 0.5,
+      "hedge_band_shares": 639,
+      "max_orders_per_event": 2,
+      "min_move_cents": 2,
+      "size_cap_base": 5,
+      "size_cap_max": 10,
+      "time_stop_us": 5000
+    },
+    "search": -1000000000.0
+  },
+  "evaluator": "C:\\Users\\varis\\AppData\\Local\\Programs\\Python\\Python312\\python.exe C:\\Users\\varis\\OneDrive\\Documents\\hackathon\\slowpath\\tuning\\evaluator.py",
+  "label": "SIMULATED arena: simulated market data and fills; not real trading results",
+  "out_of_sample": "never evaluated by this script",
+  "provenance": "real evaluator, seeds 0-59 search, 60-79 confirm",
+  "random": {
+    "best": 27.94901673928571,
+    "best_found_at_trial": 0,
+    "median_valid": -14.334452472023813,
+    "trials": 10,
+    "valid": 6
+  },
+  "recommended": {
+    "confirm": -2.413658482142857,
+    "params": {
+      "edge_threshold_ticks": 2.8931854523005502,
+      "exit_edge_ticks": 1.1236378964908398,
+      "hedge_band_shares": 664,
+      "max_orders_per_event": 2,
+      "min_move_cents": 4,
+      "size_cap_base": 5,
+      "size_cap_max": 8,
+      "time_stop_us": 6833
+    },
+    "search": 23.867292782142858,
+    "trial": 10
+  },
+  "regimes": [
+    "quiet",
+    "normal",
+    "single_jump",
+    "flash_crash",
+    "quote_flicker",
+    "feed_fault",
+    "rogue_burst"
+  ],
+  "search_seeds": "0-59",
+  "simulated": true,
+  "top_k": 5,
+  "tpe": {
+    "best": 31.308978980952386,
+    "best_found_at_trial": 19,
+    "median_valid": 12.16236569880952,
+    "trials": 20,
+    "valid": 15
+  }
+}
