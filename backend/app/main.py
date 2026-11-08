@@ -93,3 +93,14 @@ async def decide_route(pid: str, d: Decision):
 @app.get("/api/audit")
 async def audit():
     return get_adapter().audit_log(50)
+
+
+# ---- single-service deploy: serve the built website from the same server ----
+# `cd frontend && npm install && npm run build` creates frontend/dist; if it exists we serve it at "/".
+# The /api routes above are registered first, so they win. Locally (no dist) nothing changes.
+from pathlib import Path  # noqa: E402
+from fastapi.staticfiles import StaticFiles  # noqa: E402
+
+_DIST = Path(__file__).resolve().parents[2] / "frontend" / "dist"
+if _DIST.is_dir():
+    app.mount("/", StaticFiles(directory=_DIST, html=True), name="site")
